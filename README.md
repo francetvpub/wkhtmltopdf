@@ -2,15 +2,12 @@
 
 Containerized `wkhtmltopdf` and `wkhtmltoimage` on debian:jessie base.
 
-- For Docker image: [etelej/wkhtmltopdf](https://hub.docker.com/r/etelej/wkhtmltopdf/)
-
-
 
 # Basic Usage
 
 Generate PDF from website/url
 ```
-docker run --rm -v "$PWD":/cwd etelej/wkhtmltopdf wkhtmltopdf https://quotes.etelej.com /cwd/out.pdf
+docker run --rm -v "$PWD":/cwd etelej/wkhtmltopdf wkhtmltopdf https://google.com /cwd/out.pdf
 # generates out.pdf current directory
 ```
 
